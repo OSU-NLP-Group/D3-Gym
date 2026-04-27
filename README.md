@@ -12,11 +12,9 @@
 
 ## Using D3-Gym Environments
 
-D3-Gym provides 308 self-contained Docker environments, each packaging a
-data-driven discovery task with its dataset, evaluation script, and reference
-outputs. You write a `solution.py` that reads the task's dataset and writes
-results to `pred_results/`; the built-in evaluator compares your outputs against
-the gold reference and returns a pass/fail verdict.
+D3-Gym provides 565 self-contained Docker environments, each packaging a
+data-driven discovery task composed of a task instruction, datasets and file dependencies along with their previews, reference solution and output, and an evaluation script. You write a `solution.py` that reads the task's dataset and writes
+results to `pred_results/`; the evaluation script evaluates the solution and returns a pass/fail verdict. 
 
 ### Quick start
 
@@ -61,7 +59,7 @@ instruction and dataset previews via `inspect`.
 import pandas as pd
 import os
 
-df = pd.read_csv("benchmark/datasets/data.csv")
+df = pd.read_csv(path_to_input_data)
 
 # ... your analysis ...
 
@@ -83,7 +81,7 @@ df_result.to_csv("pred_results/output.csv", index=False)
 ### Mounting your solution
 
 ```bash
-# Run + evaluate (most common)
+# Run + evaluate 
 docker run --rm \
   -v $(pwd)/solution.py:/task/solution.py:ro \
   hananemoussa/d3-gym:task_1 run_and_eval
@@ -107,9 +105,6 @@ Result: True
 Reason: Overall MAE = 0.031 (threshold < 0.20)
 ```
 
-A passing task prints `Result: True`; a failing one prints `Result: False` with
-an explanation. To check programmatically:
-
 ```python
 import subprocess
 
@@ -120,17 +115,4 @@ result = subprocess.run(
     capture_output=True, text=True
 )
 passed = "Result: True" in result.stdout
-```
-
-### Batch evaluation
-
-Loop over all 308 tasks:
-
-```bash
-for i in $(seq 1 308); do
-  echo "=== task_$i ==="
-  docker run --rm \
-    -v $(pwd)/solutions/task_${i}.py:/task/solution.py:ro \
-    hananemoussa/d3-gym:task_$i run_and_eval
-done
 ```
