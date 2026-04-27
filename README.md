@@ -35,36 +35,17 @@ docker run --rm \
 
 ### Container layout
 
-Each image has the following structure inside `/task/`:
+Each image represents a data-driven discovery task with the following structure:
 
 ```
 /task/
   task_instruction.txt          # what to solve
   benchmark/datasets/           # input data (CSV, JSON, images, etc.)
-  *_preview.txt                 # dataset schema previews (optional)
+  *_preview.txt                 # dataset schema previews
   eval_script.py                # evaluation logic (compares pred vs gold)
   gold_results/                 # reference outputs
   pred_results/                 # your solution writes here
   entrypoint.sh                 # routes commands
-```
-
-### Writing a solution
-
-Your `solution.py` runs from `/task/` as the working directory. Read input data
-from `benchmark/datasets/`, compute your results, and write output files to
-`pred_results/`. The exact filenames expected are task-specific -- check the task
-instruction and dataset previews via `inspect`.
-
-```python
-import pandas as pd
-import os
-
-df = pd.read_csv(path_to_input_data)
-
-# ... your analysis ...
-
-os.makedirs("pred_results", exist_ok=True)
-df_result.to_csv("pred_results/output.csv", index=False)
 ```
 
 ### Available actions
