@@ -116,6 +116,13 @@ One primary use case is generating training trajectories (e.g., reasoning traces
 
 ## Cite Our Work
 
-If you find this work useful, please cite our paper:
+If you find our paper or resources useful in your work, please cite us:
 
-[Insert placeholder arXiv]
+```bibtex
+@article{d3gym2026,
+  title   = {D3-Gym: Constructing Verifiable Environments for Data-Driven Discovery},
+  author  = {Hanane Nour Moussa, Yifei Li, Zhuoyang Li, Yankai Yang, Cheng Tang, Tianshu Zhang, Nesreen K. Ahmed, Ali Payani, Ziru Chen, Huan Sun},
+  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/XXXX.XXXXX}
+}
