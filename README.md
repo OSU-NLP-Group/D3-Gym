@@ -8,8 +8,9 @@
 
 D3-Gym is the first automatically constructed dataset of verifiable environments for **D**ata-**D**riven **D**iscovery. D3-Gym comprises 565 tasks sourced from 239 real scientific repositories across four disciplines (bioinformatics, computational chemistry, geographic information science, and psychology and cognitive neuroscience). Each task is equipped with a natural language instruction, an executable environment with pre-installed dependencies, input dataset and artifact previews, a reference code solution, and an automatically synthesized evaluation script. 
 
-<img width="875" height="418" alt="image" src="https://github.com/user-attachments/assets/febdd151-ab66-4c1e-a1e9-db109b65e068" />
-
+<p align="center">
+  <img width="875" height="418" alt="image" src="https://github.com/user-attachments/assets/febdd151-ab66-4c1e-a1e9-db109b65e068" />
+</p>
 ## Using D3-Gym Environments
 
 D3-Gym provides 565 self-contained Docker environments, each packaging a
