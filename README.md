@@ -6,9 +6,9 @@
   <a href="https://hub.docker.com/repository/docker/hananemoussa/d3-gym/general">[Docker Hub]</a>
 </p>
 
-## Introduction
+D3-Gym is the first automatically constructed dataset composed of verifiable environments for Data-Driven Discovery. D3-Gym comprises 565 tasks sourced from 239 real scientific repositories across four disciplines (bioinformatics, computational chemistry, geographic information science, and psychology and cognitive neuroscience). Each task is equipped with a natural language instruction, an executable environment with pre-installed dependencies, input dataset and artifact previews, a reference code solution, and an automatically synthesized evaluation script. 
 
-*TODO*
+<img width="875" height="418" alt="image" src="https://github.com/user-attachments/assets/febdd151-ab66-4c1e-a1e9-db109b65e068" />
 
 ## Using D3-Gym Environments
 
