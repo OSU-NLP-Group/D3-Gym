@@ -110,8 +110,7 @@ docker run --rm -it hananemoussa/d3-gym:task_1 shell
 
 D3-Gym supports workflows that require executable environments with verifiable evaluation signals for data-driven discovery.
 
-One primary use case is generating training trajectories (e.g., reasoning traces and solutions). The trajectories used in our experiments are available on HuggingFace:  
-https://huggingface.co/datasets/hananour/D3-Gym-Trajectories
+One primary use case is generating training trajectories (e.g., reasoning traces and solutions). The trajectories used in our experiments are available on <a href="https://huggingface.co/datasets/hananour/D3-Gym-Trajectories">HuggingFace</a>. 
 
 ---
 
