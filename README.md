@@ -93,15 +93,15 @@ Each Docker image exposes the following directory layout:
 # Run and evaluate a solution
 docker run --rm \
   -v $(pwd)/solution.py:/task/solution.py:ro \
-  hananemoussa/d3-gym:task_1 run_and_eval
+  hananemoussa/d3-gym:task_151 run_and_eval
 
 # Evaluate precomputed results
 docker run --rm \
   -v $(pwd)/my_results:/task/pred_results:ro \
-  hananemoussa/d3-gym:task_1 eval
+  hananemoussa/d3-gym:task_151 eval
 
 # Interactive debugging session
-docker run --rm -it hananemoussa/d3-gym:task_1 shell
+docker run --rm -it hananemoussa/d3-gym:task_151 shell
 ~~~
 
 ---
