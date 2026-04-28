@@ -23,10 +23,9 @@ Each task includes:
 
 ## Using D3-Gym Environments
 
-All task environments are distributed as Docker images via  
-<a href="https://hub.docker.com/repository/docker/hananemoussa/d3-gym/general">Docker Hub</a>.
+All task environments are distributed as Docker images via  <a href="https://hub.docker.com/repository/docker/hananemoussa/d3-gym/general">Docker Hub</a>.
 
-Each image is a self-contained unit representing a single data-driven discovery task. It includes the task specification, datasets and previews, reference outputs, and evaluation logic.
+Each image is a self-contained unit representing a single data-driven discovery task. It includes the task specification, datasets and previews, reference outputs, and evaluation script, along with pre-installed dependencies.
 
 To solve a task, provide a `solution.py` that:
 - reads the provided datasets, and  
@@ -34,8 +33,8 @@ To solve a task, provide a `solution.py` that:
 
 The evaluation script compares your outputs against the reference and returns a pass/fail decision with a short explanation.
 
-An annotation sheet with metadata for all tasks is available on HuggingFace:  
-https://huggingface.co/datasets/hananour/D3-Gym
+For easier browsing, we also provide an annotation sheet with metadata for all tasks on <a href="https://huggingface.co/datasets/hananour/D3-Gym">HuggingFace</a>.  
+
 
 ---
 
