@@ -101,21 +101,25 @@ One primary use case is generating training trajectories (e.g., reasoning traces
 
 ## Disclaimer
 
-Repositories used in the creation of D3-Gym are under permissive licenses. We provide a full breakdown of licenses below, along with the names of the two repositories that use custom licenses. There are also 39 repositories that do not provide any license information; we assume these permit use for research purposes.
+Repositories used in the creation of D3-Gym are under permissive licenses. We provide a full breakdown of licenses below. There are also 39 repositories that do not provide any license information; we assume these permit use for research purposes.
 
-| License                     | Repository | Count |
-|----------------------------|------------|-------|
-| MIT                        |            | 99    |
-| GNU (GPL, AGPL, LGPL)      |            | 43    |
-| None                       |            | 39    |
-| BSD                        |            | 29    |
-| Apache                     |            | 22    |
-| CC                         |            | 4     |
-| ISC                        |            | 1     |
-| **Custom**                 | BrainIAC   |       |
-|                            | DeepDelta  | 2     |
-| **Total**                  |            | **239** |
+### License Distribution
 
+| License                | Count |
+|------------------------|-------|
+| MIT                    | 99    |
+| GNU (GPL, AGPL, LGPL)  | 43    |
+| None                   | 39    |
+| BSD                    | 29    |
+| Apache                 | 22    |
+| CC                     | 4     |
+| ISC                    | 1     |
+| Custom                 | 2     |
+| **Total**              | **239** |
+
+### Custom-Licensed Repositories
+- BrainIAC  
+- DeepDelta
 
 ---
 
