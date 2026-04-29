@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/XXXX.XXXXX">[Paper]</a> &nbsp;
-  <a href="https://huggingface.co/datasets/PLACEHOLDER">[HuggingFace]</a> &nbsp;
+  <a href="[https://huggingface.co/datasets/PLACEHOLDER](https://huggingface.co/collections/osunlp/d3-gym)">[HuggingFace]</a> &nbsp;
   <a href="https://hub.docker.com/repository/docker/hananemoussa/d3-gym/general">[Docker Hub]</a>
 </p>
 
@@ -110,7 +110,7 @@ docker run --rm -it hananemoussa/d3-gym:task_151 shell
 
 D3-Gym supports workflows that require executable environments with verifiable evaluation signals for data-driven discovery.
 
-One primary use case is generating training trajectories (e.g., reasoning traces and solutions). The trajectories used in our experiments are available on <a href="https://huggingface.co/datasets/hananour/D3-Gym-Trajectories">HuggingFace</a>. 
+One primary use case is generating training trajectories (e.g., reasoning traces and solutions). The trajectories used in our experiments are available on <a href="osunlp/D3-Gym-Trajectories">HuggingFace</a>. 
 
 ---
 
