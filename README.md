@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/XXXX.XXXXX">[Paper]</a> &nbsp;
-  <a href="https://huggingface.co/datasets/PLACEHOLDER">[HuggingFace]</a> &nbsp;
+  <a href="https://huggingface.co/collections/osunlp/d3-gym">[HuggingFace]</a> &nbsp;
   <a href="https://hub.docker.com/repository/docker/hananemoussa/d3-gym/general">[Docker Hub]</a>
 </p>
 
@@ -33,7 +33,7 @@ To solve a task, provide a `solution.py` that:
 
 The evaluation script compares your outputs against the reference and returns a pass/fail decision with a short explanation.
 
-For easier browsing, we also provide an annotation sheet with metadata for all tasks on <a href="https://huggingface.co/datasets/hananour/D3-Gym">HuggingFace</a>.  
+For easier browsing, we also provide an annotation sheet with metadata for all tasks on <a href="https://huggingface.co/datasets/osunlp/D3-Gym">HuggingFace</a>.  
 
 
 ---
@@ -72,21 +72,6 @@ Each Docker image exposes the following directory layout:
   entrypoint.sh            # command routing
 ~~~
 
----
-
-## Available Commands
-
-| Command        | Description                                      | Requires                  |
-|----------------|--------------------------------------------------|---------------------------|
-| `run`          | Execute `solution.py`                            | Provide solution file     |
-| `eval`         | Evaluate existing `pred_results/`                | Provide results directory |
-| `run_and_eval` | Run solution and evaluate results               | Provide solution file     |
-| `inspect`      | Display task instructions and dataset listing   | Nothing                   |
-| `shell`        | Open an interactive shell                       | `-it` flag                |
-| `help`         | Show usage information                          | Nothing                   |
-
----
-
 ## Providing Your Solution or Outputs
 
 ~~~bash
@@ -110,7 +95,7 @@ docker run --rm -it hananemoussa/d3-gym:task_151 shell
 
 D3-Gym supports workflows that require executable environments with verifiable evaluation signals for data-driven discovery.
 
-One primary use case is generating training trajectories (e.g., reasoning traces and solutions). The trajectories used in our experiments are available on <a href="osunlp/D3-Gym-Trajectories">HuggingFace</a>. 
+One primary use case is generating training trajectories (e.g., reasoning traces and solutions). The trajectories used in our experiments are available on <a href="https://huggingface.co/datasets/osunlp/D3-Gym-Trajectories">HuggingFace</a>. 
 
 ---
 
