@@ -16,7 +16,7 @@ Each task includes:
 - and an automatically generated evaluation script.
 
 <p align="center">
-  <img width="875" height="418" alt="image" src="https://github.com/user-attachments/assets/febdd151-ab66-4c1e-a1e9-db109b65e068" />
+  <img width="1425" height="668" alt="image" src="https://github.com/user-attachments/assets/d4cffe95-74aa-47f3-9d7b-60f1562b3414" />
 </p>
 
 ---
