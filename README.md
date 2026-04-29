@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/XXXX.XXXXX">[Paper]</a> &nbsp;
-  <a href="[https://huggingface.co/datasets/PLACEHOLDER](https://huggingface.co/collections/osunlp/d3-gym)">[HuggingFace]</a> &nbsp;
+  <a href="https://huggingface.co/datasets/PLACEHOLDER">[HuggingFace]</a> &nbsp;
   <a href="https://hub.docker.com/repository/docker/hananemoussa/d3-gym/general">[Docker Hub]</a>
 </p>
 
