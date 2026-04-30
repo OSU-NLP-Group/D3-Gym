@@ -1,0 +1,49 @@
+### Qwen3-32B LoRA Fine-tuning on AutoSDT-5K
+### For use with LLaMA-Factory (requires DeepSpeed ZeRO-3)
+
+### Model
+model_name_or_path: Qwen/Qwen3-32B
+trust_remote_code: true
+
+### Method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: all
+lora_rank: 8
+lora_alpha: 16
+lora_dropout: 0.05
+
+### Dataset
+dataset_dir: data
+dataset: autosdt_5k_nothink
+template: qwen
+cutoff_len: 4096
+preprocessing_num_workers: 1
+dataloader_num_workers: 4
+overwrite_cache: true
+
+### Output
+output_dir: saves/qwen3-32b-autosdt5k-lora-sft
+logging_steps: 1
+save_strategy: epoch
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: false
+report_to: none
+
+### Training Hyperparameters
+# 8 GPUs (2 nodes x 4 GPUs)
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 4
+learning_rate: 5.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null
+gradient_checkpointing: true
+
+### DeepSpeed
+deepspeed: examples/deepspeed/ds_z3_config.json
