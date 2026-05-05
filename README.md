@@ -130,7 +130,7 @@ If you find our paper or resources useful in your work, please cite us:
 @article{d3gym2026,
   title   = {D3-Gym: Constructing Verifiable Environments for Data-Driven Discovery},
   author  = {Hanane Nour Moussa, Yifei Li, Zhuoyang Li, Yankai Yang, Cheng Tang, Tianshu Zhang, Nesreen K. Ahmed, Ali Payani, Ziru Chen, Huan Sun},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  journal = {arXiv preprint arXiv:2604.27977},
   year    = {2026},
-  url     = {https://arxiv.org/abs/XXXX.XXXXX}
+  url     = {https://arxiv.org/abs/2604.27977}
 }
