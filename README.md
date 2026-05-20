@@ -1,7 +1,7 @@
 # D3-Gym
 
 <p align="center">
-  <a href="https://arxiv.org/abs/XXXX.XXXXX">[Paper]</a> &nbsp;
+  <a href="https://arxiv.org/abs/2604.27977">[Paper]</a> &nbsp;
   <a href="https://huggingface.co/collections/osunlp/d3-gym">[HuggingFace]</a> &nbsp;
   <a href="https://hub.docker.com/repository/docker/hananemoussa/d3-gym/general">[Docker Hub]</a>
 </p>
